@@ -8,6 +8,9 @@
 h3.white{
     color: white;
 }
+h1{
+    color: white;
+}
 li{
     color: white;
 }
@@ -37,7 +40,6 @@ ul.menu {
     overflow: hidden;
     background-color: #333;
 }
-
 
 
 .bot{
