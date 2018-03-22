@@ -24,7 +24,7 @@ li{
 
 p{
 font-family: 'Germania One', cursive;
-color: dodgerblue;
+color: white;
 }
 a{
 font-family: 'Germania One', cursive;
@@ -70,7 +70,7 @@ li a {
 
 li a:hover {
     background-color: skyblue;
-    color: black;
+    color: whitesmoke;
 }
 
 .article{
