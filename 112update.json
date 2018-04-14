@@ -1,10 +1,10 @@
 {
   "homepage": "http://zawamod.org",
   "promos": {
-    "1.12-latest": "1.12-2.0.0",
-    "1.12-recommended": "1.12-2.0.0"
+    "1.12-latest": "1.12-1.0.0",
+    "1.12-recommended": "1.12-1.0.0"
   },
   "1.12": {
-    "1.12-2.0.0": "Did literally nothing"
+    "1.12-1.0.0": "Initial Release"
   }
 }
