@@ -1,13 +1,14 @@
 {
   "homepage": "http://zawamod.org",
   "promos": {
-    "1.12.2-latest": "1.12.2-1.0.3",
-    "1.12.2-recommended": "1.12.2-1.0.3"
+    "1.12.2-latest": "1.12.2-1.0.4",
+    "1.12.2-recommended": "1.12.2-1.0.4"
   },
   "1.12.2": {
     "1.12.2-1.0.0": "Initial Release",
 	"1.12.2-1.0.1": "Added:\n-New meerkat texture including stripes\nFixed:\n-Issue in the zawa spawn eggs that caused server crashes\n-Tree frog health was too high",
 	"1.12.2-1.0.2": "Fixed server crashes\nFixed Spelling mistake",
-	"1.12.2-1.0.3": "Fixed server crashes"
+	"1.12.2-1.0.3": "Fixed server crashes",
+	"1.12.2-1.0.4": "Fixed around 15 bugs mostly critical issues"
   }
 }
