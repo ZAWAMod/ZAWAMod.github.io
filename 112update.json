@@ -1,14 +1,15 @@
 {
   "homepage": "http://zawamod.org",
   "promos": {
-    "1.12-latest": "1.12-1.0.4",
-    "1.12-recommended": "1.12-1.0.4"
+    "1.12-latest": "1.12-1.1.0",
+    "1.12-recommended": "1.12-1.1.0"
   },
   "1.12": {
     "1.12-1.0.0": "Initial Release",
 	"1.12-1.0.1": "Added:\n-New meerkat texture including stripes\nFixed:\n-Issue in the zawa spawn eggs that caused server crashes\n-Tree frog health was too high",
 	"1.12-1.0.2": "Fixed server crashes",
 	"1.12-1.0.3": "Fixed server crashes",
-	"1.12-1.0.4": "Fixed around 15 bugs mostly critical issues"
+	"1.12-1.0.4": "Fixed around 15 bugs mostly critical issues",
+	"1.12-1.1.0": "I dont even know check here -> https://minecraft.curseforge.com/projects/zoo-wild-animals-rebuild/files/2559632"
   }
 }
