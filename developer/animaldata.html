@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Zoo &amp; Wild Animals Mod</title>
+		<meta charset="utf-8" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <meta name="description" content="Zoo and Wild Animals Mod">
+        <meta name="keywords" content="Animals,Mods,Minecraft Mods,1.9,1.10,1.8,1.7.10,1.12">
+        <meta name="author" content="George K. Kazanjian">
+        <meta http-equiv="X-UA-Compatible" content="IE=ed">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+        <meta name="twitter:card" content="The amazing Zoo & Wild Animals Mod!" />
+        <meta name="twitter:site" content="http://zawa.soggymustache.net" />
+        <meta name="twitter:title" content="ZAWA Mod" />
+        <meta name="twitter:description" content="The Zoo and Wild Animals Mod" />
+        <meta name="twitter:image" content="https://github.com/0SoggyMustache0/0SoggyMustache0.github.io/blob/master/zawasite/images/zawa.png?raw=true" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#465c3e">
+        <meta name="apple-mobile-web-app-title" content="Zoo &amp; Wild Animals Mod">
+        <meta name="application-name" content="Zoo &amp; Wild Animals Mod">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">ZAWA</a>
+					<nav id="nav">
+						<a href="../index.html">Home</a>
+                        <a href="../download.html">Download</a>
+                        <a href="../wiki.html">Wiki</a>
+                        <a href="../developer.html">Developer</a>
+                        <a href="../donate.html">Donate</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Extra Data Book Info<h2>
+					</header>
+					<!-- https://minecraft.curseforge.com/projects/zoo-wild-animals-rebuild-->
+                    <center>
+                        <img src="images/data_book.png"/ height="400px">
+                        <br/>
+                        </center>
+                        <h3>Prerequisites</h3>
+                        <p>A ZAWABaseLand extended animal</p>
+                        <h3>Tutorial</h3>
+                        <p>This tutorial will be showing you how to add extra animal info to the data book. <br/> In your animal class add the following code.</p>
+                        
+                        <pre><code>
+@Override
+public DataItem getIconList() {
+	List<StringedItem> s = new ArrayList<StringedItem>();
+	
+	return new DataItem(s);
+}
+                        </code></pre>
+                       
+                        <p>What this code does is tell the data book to create a new list of data to show in the book. <br/> Now that we have this code we are able to start actually adding in things to display in the book.</p>
+                        <p>ZAWA has a list of pre-defined icons to show listed below is code for adding them all to the animal</p>
+                       
+                        <pre><code>
+@Override
+public DataItem getIconList() {
+	List<StringedItem> s = new ArrayList<StringedItem>();
+	s.add(new StatusDigging());
+	s.add(new StatusCarrying());
+	s.add(new StatusClimbing());
+	s.add(new StatusEggLaying());
+	s.add(new StatusJumping());
+	s.add(new StatusStealing());
+	s.add(new StatusSunSeeking());
+	s.add(new StatusSwimming());
+	s.add(new StatusVenomous());
+	return new DataItem(s);
+}
+                        </code></pre>
+                     
+                        <p>While using the ZAWA pre-defined info is nice there is still the option to add our own custom info, we can do this one of two ways.</p>
+                        <p>Option 1 is to add the custom directly in the getIconList method as shown below.</p>
+                       
+                        <pre><code>
+@Override
+public DataItem getIconList() {
+	List<StringedItem> s = new ArrayList<StringedItem>();
+    s.add(new StringedItem(stack, info));
+	return new DataItem(s);
+}
+                        </code></pre>
+                        <p>The stack is where we can either have an itemstack or a resource location to display our icon, the second variable info is where we can define the info when hovered over the icon.</p>
+                        <p>The second option would be to create a new class all together extending the StringedItem class from ZAWA and creating a new version of it like we did with the ZAWA default status icons. This method should be used if you plan on calling the same status type multiple times for example if all your animals fly.</p>
+                        
+                        <a href="index.html" class="button special">Back to tutorials</a>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; ZAWA Development : Minecraft is copyright Mojang AB and is not affiliated with this site 
+						</div>
+						<ul class="icons">
+							<li><a href="https://twitter.com/ZaWA_Mod" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCofOlRyz8Hs0H5olEO8Lfrw" target="_blank" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
