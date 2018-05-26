@@ -1,8 +1,8 @@
 {
   "homepage": "http://zawamod.org",
   "promos": {
-    "1.12-latest": "1.12-1.1.0",
-    "1.12-recommended": "1.12-1.1.0"
+    "1.12-latest": "1.12-1.2.0",
+    "1.12-recommended": "1.12-1.2.0"
   },
   "1.12": {
     "1.12-1.0.0": "Initial Release",
@@ -10,6 +10,7 @@
 	"1.12-1.0.2": "Fixed server crashes",
 	"1.12-1.0.3": "Fixed server crashes",
 	"1.12-1.0.4": "Fixed around 15 bugs mostly critical issues",
-	"1.12-1.1.0": "I dont even know check here -> https://minecraft.curseforge.com/projects/zoo-wild-animals-rebuild/files/2559632"
+	"1.12-1.1.0": "I dont even know check here -> https://minecraft.curseforge.com/projects/zoo-wild-animals-rebuild/files/2559632",
+	"1.12.1-1.2.0": "Read the changelog at https://minecraft.curseforge.com/projects/zoo-wild-animals-rebuild"
   }
 }
