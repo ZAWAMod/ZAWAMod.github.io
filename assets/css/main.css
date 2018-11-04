@@ -2190,6 +2190,26 @@
 			margin-bottom: 0;
 		}
 
+    .box.right {
+      max-width: 40%;
+			float: right;
+      margin-bottom: 1em;
+      margin-left: 1.5em;
+			margin-top: -0.25em;
+    }
+
+    .box.left {
+      max-width: 40%;
+			float: left;
+      margin-bottom: 1em;
+			margin-right: 1.5em;
+			top: 0.25em;
+    }
+
+    .box img {
+      max-width: 100%
+    }
+
 		.box.alt {
 			border: 0;
 			border-radius: 0;
