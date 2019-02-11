@@ -14,7 +14,7 @@
         <meta name="author" content="George K. Kazanjian">
         <meta http-equiv="X-UA-Compatible" content="IE=ed">
 		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
         <meta name="twitter:card" content="The amazing Zoo & Wild Animals Mod!" />
         <meta name="twitter:site" content="http://zawa.soggymustache.net" />
@@ -33,21 +33,38 @@
 	</head>
 	<body class="subpage">
         
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo">ZAWA</a>
-					<nav id="nav">
-						<a href="index.html">Home</a>
-                        <a href="download.html">Download</a>
-                        <a href="addon.html">Addons</a>
-                        <a href="wiki.html">Wiki</a>
-                        <a href="developer.html">Developer</a>
-                        <a href="donate.html">Donate</a>
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+           <a class="navbar-brand" href="#"><img src="images/zawa.png" height="30px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="download.html">Download</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://discord.gg/Keyxcvd" target="_blank">Discord</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="https://minecraft.curseforge.com/projects/zoo-wild-animals-rebuild/relations/dependents?filter-related-dependents=3" target="_blank">Addons</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="wiki.html">Wiki</a>
+              </li>
+                  <li class="nav-item active">
+                <a class="nav-link" href="donate.html">Donate <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
 		<!-- Three -->
 			<section id="three" class="wrapper">
@@ -91,7 +108,9 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>

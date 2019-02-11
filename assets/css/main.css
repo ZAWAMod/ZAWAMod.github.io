@@ -1821,6 +1821,23 @@
 				color: #FFF;
 			}
 
+		section.wrapper.style2, article.wrapper.style2 {
+			background: #b22ea5;
+			color: #bacee6;
+		}
+
+			section.wrapper.style2 header h2, article.wrapper.style2 header h2 {
+				color: #fff;
+			}
+
+			section.wrapper.style2 header p, article.wrapper.style2 header p {
+				color: #bacee6;
+			}
+
+			section.wrapper.style2 h3, article.wrapper.style2 h3 {
+				color: #FFF;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			section.wrapper, article.wrapper {
